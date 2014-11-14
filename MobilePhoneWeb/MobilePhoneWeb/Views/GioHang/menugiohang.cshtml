@@ -1,0 +1,87 @@
+﻿@model MobilePhoneWeb.Models.DSGioHang
+@{
+    ViewBag.Title = "menugiohang";
+}
+
+<div class="title">GIỎ HÀNG</div>
+<div class="show" style="padding-top: 5px;">
+
+    <style type="text/css">
+        .auto-style1a {
+            text-align: right;
+            width: 1103px;
+        }
+
+        .auto-style7a {
+            font-size: medium;
+        }
+
+        .auto-style8a {
+            width: 500px;
+        }
+
+        .auto-style11a {
+            width: 546px;
+        }
+
+        .auto-style12a {
+            text-align: right;
+            height: 26px;
+            width: 1103px;
+        }
+
+        .auto-style13a {
+            width: 546px;
+            height: 26px;
+        }
+
+        .auto-style14a {
+            text-align: right;
+            height: 30px;
+            width: 1103px;
+        }
+
+        .auto-style15a {
+            width: 546px;
+            height: 30px;
+        }
+
+        .auto-style16a {
+            text-align: right;
+            width: 1103px;
+            height: 24px;
+        }
+
+        .auto-style17a {
+            text-align: left;
+            width: 546px;
+            height: 24px;
+        }
+    </style>
+    @if (Request.IsAuthenticated)
+            {
+                Session["Account"] = @Html.Encode(User.Identity.Name);
+                <div>
+                    <p align="center" style="color:#FF0000"><b>  <strong>Xin chào @Html.Encode(User.Identity.Name)</strong> </b><br />Chúc một ngày tốt lành!</p>
+                    <center><img src="~/Images/star.gif" /></center>
+                    <p style="line-height:0" align="center"><a href="/User/EditUser">Sửa thông tin cá nhân</a></p>             
+                    @using (Html.BeginForm("LogOff","User"))
+                    {
+                        <div><center><input type="button" name="dangxuat" value="Đăng xuất" onclick="goToLogOut();"/></center></div>
+                    }
+                </div>
+            }else{
+    <span id="GioHang_TomTat1_lb_Chao" style="font-style: italic; color: #FF3300">Bạn chưa đăng nhập</span>
+    <span id="GioHang_TomTat1_DangNhap1_lb_AnHien"><a href="#overlay">Đăng nhập</a></span>
+    }
+    <br>
+    Tổng số lượng: <span id="nn-cart-count" style="font-weight: 700"> @Model.Cart.sogiohang().ToString() </span>
+    <br>
+    Tổng tiền: <strong>
+        <span id="nn-cart-total"> @Model.Cart.tongtien().ToString() đ</span>
+        <br>
+    </strong>
+    <a id="GioHang_TomTat1_hl_ChiTietGioHang" title="Chi tiết giỏ hàng" href="/GioHang"><img src="~/Images/iconGioHang.png" alt="HyperLink"></a>
+</div>
+
+

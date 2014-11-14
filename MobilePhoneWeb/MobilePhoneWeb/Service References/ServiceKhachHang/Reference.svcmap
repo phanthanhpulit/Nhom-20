@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d76f2d6c-bbd5-4a12-93a0-d21b4a44e3a9" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3015/ServiceKhachHang.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceKhachHang.disco" MetadataType="Disco" ID="4d1aa3a2-34f4-42cb-bdc1-726be684b85e" SourceId="1" SourceUrl="http://localhost:3015/ServiceKhachHang.svc?disco" />
+    <MetadataFile FileName="ServiceKhachHang.xsd" MetadataType="Schema" ID="23e1e0f7-aa77-47d3-bc7c-35d0e7db6d0d" SourceId="1" SourceUrl="http://localhost:3015/ServiceKhachHang.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceKhachHang1.xsd" MetadataType="Schema" ID="f4c829a3-89c1-48fe-9976-cd4af4f3bfde" SourceId="1" SourceUrl="http://localhost:3015/ServiceKhachHang.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceKhachHang.wsdl" MetadataType="Wsdl" ID="6fa7e86e-08fc-436b-8a9f-c225abff37de" SourceId="1" SourceUrl="http://localhost:3015/ServiceKhachHang.svc?wsdl" />
+    <MetadataFile FileName="ServiceKhachHang2.xsd" MetadataType="Schema" ID="fcc7b110-21ce-40ad-960f-8a8e5ba43462" SourceId="1" SourceUrl="http://localhost:3015/ServiceKhachHang.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

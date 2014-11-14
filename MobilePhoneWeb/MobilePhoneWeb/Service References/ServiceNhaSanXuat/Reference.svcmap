@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="66130e87-7f4f-4dbd-9739-78e8525bb72e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3015/ServiceNhaSanXuat.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceNhaSanXuat.xsd" MetadataType="Schema" ID="3abefa76-b57f-48c1-b0b7-c013523dfd46" SourceId="1" SourceUrl="http://localhost:3015/ServiceNhaSanXuat.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceNhaSanXuat1.xsd" MetadataType="Schema" ID="7d67d12f-41b9-471e-aa92-2131573831fc" SourceId="1" SourceUrl="http://localhost:3015/ServiceNhaSanXuat.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceNhaSanXuat.wsdl" MetadataType="Wsdl" ID="f11de605-0a8c-4d85-867c-519f26754cf5" SourceId="1" SourceUrl="http://localhost:3015/ServiceNhaSanXuat.svc?wsdl" />
+    <MetadataFile FileName="ServiceNhaSanXuat2.xsd" MetadataType="Schema" ID="88a0a5b5-128d-4af4-9937-5ad87eb7588e" SourceId="1" SourceUrl="http://localhost:3015/ServiceNhaSanXuat.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceNhaSanXuat.disco" MetadataType="Disco" ID="98889ac6-7c8e-498c-97e3-547d789dd4ab" SourceId="1" SourceUrl="http://localhost:3015/ServiceNhaSanXuat.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

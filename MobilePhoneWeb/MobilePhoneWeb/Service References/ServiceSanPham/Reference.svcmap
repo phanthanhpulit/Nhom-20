@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="32ecb674-075d-4fc5-8af9-df35bbc81c64" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:3015/ServiceSanPham.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceSanPham.wsdl" MetadataType="Wsdl" ID="9457da6e-4727-4f00-9de6-94a04a14d13d" SourceId="1" SourceUrl="http://localhost:3015/ServiceSanPham.svc?wsdl" />
+    <MetadataFile FileName="ServiceSanPham.xsd" MetadataType="Schema" ID="a9705174-0ade-4aca-a728-2e1a0c2b2b68" SourceId="1" SourceUrl="http://localhost:3015/ServiceSanPham.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceSanPham.disco" MetadataType="Disco" ID="96dabfd6-b4d5-481e-8e1e-983bf2ccd20b" SourceId="1" SourceUrl="http://localhost:3015/ServiceSanPham.svc?disco" />
+    <MetadataFile FileName="ServiceSanPham1.xsd" MetadataType="Schema" ID="44fbc5f4-df87-42cc-a20c-f5b18f07fcaf" SourceId="1" SourceUrl="http://localhost:3015/ServiceSanPham.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceSanPham2.xsd" MetadataType="Schema" ID="da015b5e-145c-47e0-84ff-dfd94ed73e49" SourceId="1" SourceUrl="http://localhost:3015/ServiceSanPham.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

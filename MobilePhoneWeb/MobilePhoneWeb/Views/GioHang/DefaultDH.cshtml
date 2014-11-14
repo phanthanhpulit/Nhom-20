@@ -1,0 +1,156 @@
+﻿@model MobilePhoneWeb.Models.DSGioHang
+@{
+        ViewBag.Title = "DatHang";
+    }
+<section id="giohang">
+    <h1>GIỎ HÀNG CỦA BẠN</h1>
+    <div class="giohang-inner">
+
+        <table>
+            <colgroup span="4"
+                      style="background-color:#EEE8AA;"></colgroup>
+            <colgroup span="1"
+                      style="background-color:#F96;"></colgroup>
+            <colgroup span="1"
+                      style="background-color:#EEE8AA;"></colgroup>
+            <thead>
+                <tr>
+
+                    <th>
+                        Ảnh
+                    </th>
+                    <th>
+                        Tên sản phẩm
+                    </th>
+                    <th>
+                        Số lượng
+                    </th>
+                    <th>
+                        Giá sản phẩm
+                    </th>
+                    <th>
+                        Tổng
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model.Cart.Lines)
+                {
+                    <tr>
+
+                        <td>
+                            <a href="../SanPham/ChiTietSanPham/@item.masp">
+                                <img src="../../Content/themes/SanPham/@item.hinhanh" width="100px" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../SanPham/ChiTietSanPham/@item.masp">
+                                @item.tensp
+                            </a>
+                        </td>
+                        <td style="width: 140px;">
+                            @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(item.soluong))
+                        </td>
+                        <td style="width: 140px;">
+                            @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(item.gia))
+                        </td>
+                        <td style="color:#FFF; font-weight:bold; width:140px">
+                            @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(item.gia * item.soluong))
+                        </td>
+                    </tr>
+                }
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="5" align="right">
+                        Tổng tiền:
+                    </th>
+                    <th style="background-color:#EEE8AA; color:#F00; font-size:20px">
+                        @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(Model.Cart.tongtien()))
+                    </th>
+                    <th>
+                    </th>
+                </tr>
+
+            </tfoot>
+        </table>
+
+    </div>
+
+</section>
+
+<section id="dangky">
+@if (Session["Account"] != null)
+    {
+        <h1>Đặt hàng bằng tài khoản của website</h1>
+        using (Html.BeginForm("DatHang", "ThanhToan", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.ValidationSummary(true)
+            <div class="box-dangnhap">
+                <p>Ban chap nhan don hang voi tai khoan: </p>
+                <p style="color:blue">@Session["Account"].ToString()</p>
+                <span class="dangnhap">
+                    <span>Tên người nhận<br></span>
+                    @Html.EditorFor(model => model.tennguoinhan)
+                    <p style="color:red;">  @Html.ValidationMessageFor(model => model.tennguoinhan)</p>
+                    <span>Email<br></span>
+                    @Html.EditorFor(model => model.email)
+                    <p style="color:red;">  @Html.ValidationMessageFor(model => model.email)</p>
+                    <span>Địa chỉ<br></span>
+                    @Html.EditorFor(model => model.diachi)
+                    <p style="color:red;">@Html.ValidationMessageFor(model => model.diachi)</p>
+                    <span>Số điện thoại<br></span>
+                    @Html.EditorFor(model => model.sodt)
+                    <p style="color:red;">  @Html.ValidationMessageFor(model => model.sodt)</p>
+
+                </span>
+
+                <span class="button-dangnhap">
+                    <input name="sbmDangNhap" type="submit" value="Hoàn tất" />
+                </span>
+
+            </div>
+        }
+
+    }
+    else
+    {
+using (Html.BeginForm("DatHang", "ThanhToan", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.ValidationSummary(true)
+
+            <h1>ĐIỀN THÔNG TIN NGƯỜI ĐẶT HÀNG</h1>
+
+            <div class="box-dangnhap">
+
+                <span class="dangnhap">
+                    <span>Tên người nhận<br></span>
+                    @Html.EditorFor(model => model.tennguoinhan)
+                    <p style="color:red;">  @Html.ValidationMessageFor(model => model.tennguoinhan)</p>
+                    <span>Email<br></span>
+                    @Html.EditorFor(model => model.email)
+                    <p style="color:red;">  @Html.ValidationMessageFor(model => model.email)</p>
+                    <span>Địa chỉ<br></span>
+                    @Html.EditorFor(model => model.diachi)
+                    <p style="color:red;">@Html.ValidationMessageFor(model => model.diachi)</p>
+                    <span>Số điện thoại<br></span>
+                    @Html.EditorFor(model => model.sodt)
+                    <p style="color:red;">  @Html.ValidationMessageFor(model => model.sodt)</p>
+
+                </span>
+
+                <span class="button-dangnhap">
+                    <input name="sbmDangNhap" type="submit" value="Hoàn tất" />
+                </span>
+
+            </div>
+
+
+        }
+
+        }
+    </section>
+
+

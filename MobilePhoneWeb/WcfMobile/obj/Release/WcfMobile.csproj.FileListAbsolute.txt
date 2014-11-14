@@ -1,0 +1,6 @@
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\WcfMobile\bin\WcfMobile.dll
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\WcfMobile\bin\WcfMobile.pdb
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\WcfMobile\bin\EntityFramework.dll
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\WcfMobile\bin\EntityFramework.xml
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\WcfMobile\obj\Release\WcfMobile.dll
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\WcfMobile\obj\Release\WcfMobile.pdb

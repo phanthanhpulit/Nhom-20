@@ -1,0 +1,20 @@
+﻿<a href="#" id="go_top" title="Lên đầu trang" style="display: inline;"></a>
+
+<script type="text/javascript">
+    (function () {
+        // Ẩn hiện icon go-top
+        $(window).scroll(function () {
+            if ($(window).scrollTop() == 0) {
+                $('#go_top').stop(false, true).fadeOut(1000);
+            }
+            else {
+                $('#go_top').stop(false, true).fadeIn(1000);
+            }
+        });
+        // Cuộn trang lên với scrollTop
+        $('#go_top').click(function () {
+            $('body,html').animate({ scrollTop: 0 }, 400);
+            return false;
+        })
+    })(jQuery);
+</script>

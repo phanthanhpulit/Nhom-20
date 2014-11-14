@@ -1,0 +1,11 @@
+﻿@model IEnumerable<MobilePhoneWeb.ServiceNhaSanXuat.NhaSanXuat>
+
+<select name="nhasanxuat" style="height:20px;width:200px;">
+    <option value="0">-Hãng sản xuất-</option>
+
+@foreach (var item in Model)
+{
+    <option value="@item.MaNSX">@item.TenNSX</option>
+}
+
+</select>

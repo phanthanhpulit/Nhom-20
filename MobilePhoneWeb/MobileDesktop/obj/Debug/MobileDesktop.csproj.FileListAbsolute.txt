@@ -1,0 +1,98 @@
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\bin\Debug\MobileDesktop.exe.config
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\bin\Debug\MobileDesktop.exe
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\bin\Debug\MobileDesktop.pdb
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\obj\Debug\MobileDesktop.csprojResolveAssemblyReference.cache
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\obj\Debug\MobileDesktop.Properties.Resources.resources
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\obj\Debug\MobileDesktop.csproj.GenerateResource.Cache
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\obj\Debug\MobileDesktop.exe
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\obj\Debug\MobileDesktop.pdb
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\obj\Debug\MobileDesktop.FormKhachHang.resources
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\obj\Debug\MobileDesktop.FormSanPham.resources
+D:\Tai lieu\WEB SERVICE\Projects\WcfMobileWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhanVien.resources
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.exe.config
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.exe
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.pdb
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.exe
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.pdb
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhanVien.resources
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormKhachHang.resources
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormSanPham.resources
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.Properties.Resources.resources
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.csproj.GenerateResource.Cache
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormQuanLy.resources
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhaSanXuat.resources
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhaPhanPhoi.resources
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.csprojResolveAssemblyReference.cache
+D:\Tai lieu\WEB SERVICE\Projects\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormQuyenNhanVien.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormDangNhap.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhanVien.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormKhachHang.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhaPhanPhoi.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhaSanXuat.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormQuanLy.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormQuyenNhanVien.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormSanPham.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.Properties.Resources.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.csproj.GenerateResource.Cache
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.exe
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.exe.config
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.exe
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.pdb
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.pdb
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormDonHang.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormMenuThongKe.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeNVThang.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeSPThang.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FromThongKeSP.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormChiTietPhieuNhap.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhapHang.resources
+C:\Users\Admin\Desktop\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeSPNhap.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.exe.config
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.exe
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormChiTietPhieuNhap.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormDangNhap.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormDonHang.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormMenuThongKe.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhanVien.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormKhachHang.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhapHang.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhaPhanPhoi.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhaSanXuat.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormQuanLy.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormQuyenNhanVien.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormSanPham.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeNVThang.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeSPNhap.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeSPThang.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FromThongKeSP.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.Properties.Resources.resources
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.csproj.GenerateResource.Cache
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.exe
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.pdb
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.pdb
+C:\Users\PhungNguyen\Downloads\Compressed\MobilePhoneWeb1\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.csprojResolveAssemblyReference.cache
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.exe.config
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.exe
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.pdb
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.exe
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\bin\Debug\MobileDesktop.pdb
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.csprojResolveAssemblyReference.cache
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormChiTietPhieuNhap.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormDangNhap.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormDonHang.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormMenuThongKe.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhanVien.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormKhachHang.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhapHang.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhaPhanPhoi.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormNhaSanXuat.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormQuanLy.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormQuyenNhanVien.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormSanPham.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeNVThang.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeSPNhap.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FormThongKeSPThang.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.FromThongKeSP.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.Properties.Resources.resources
+C:\Users\PhungNguyen\Desktop\Nhom20\MobilePhoneWeb\MobileDesktop\obj\Debug\MobileDesktop.csproj.GenerateResource.Cache

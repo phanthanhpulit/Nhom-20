@@ -1,0 +1,34 @@
+﻿@model IEnumerable<MobilePhoneWeb.ServiceSanPham.SanPham>
+@{
+    ViewBag.Title = "SanPhamCungLoai";
+}
+
+<div class="title1" style="height:21px;margin-top: 10px;">&nbsp;SẢN PHẨM CÙNG LOẠI</div>
+
+<div class="show group" style="padding-top:8px;">
+    @foreach (var pro in Model.Take(8))
+    {
+        <div class="product_grid">
+            <div class="product_item">
+                    <div class="detail">
+                        <a href="@Url.Action("Details", "Index", new { id = pro.MaSP})" class="auto-style2">
+                            <img src="~/Images/SanPham/@Html.DisplayFor(i => pro.UrlHinh)" style="height:160px;width:160px;"><br>
+
+                            <div class="ProductName">
+                                <span style="text-align: center; color: #000000;">@pro.TenSP</span>
+                            </div>
+
+                            <div class="Price-List">
+                                <span style="text-align: center; color: #FF3300; ">@pro.Gia</span>
+                            </div>
+                            <div style="padding-top: 10px">
+                                @*@Html.ActionLink("Thêm vào giỏ", "addtocart", new { id = pro.MaSP }, new { @Style = "font-weight:bold; color:#ff6a00" })*@
+                                <a href="@Url.Action("giohangthem", "GioHang", new { masanpham = pro.MaSP })">Thêm vào giỏ</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    }
+</div>
+

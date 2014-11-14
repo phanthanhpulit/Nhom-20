@@ -1,0 +1,70 @@
+﻿@model IEnumerable<MobilePhoneWeb.ServiceSanPham.SanPham>
+@{
+    ViewBag.Title = "Dung Mobile";
+    Layout = "~/Views/Shared/_LayoutPageIndex.cshtml";
+}
+
+
+<div id="mid_1">
+
+
+    <style type="text/css">
+        .auto-style1 {
+            color: #000000;
+            font-size: medium;
+        }
+
+        .auto-style2 {
+            text-decoration: none;
+        }
+    </style>
+
+    <div class="title1" style="height:21px">&nbsp;SẢN PHẨM MỚI</div>
+
+    <div class="show group" style="padding-top:8px;">
+        @foreach (var pro in Model.Take(8))
+        {
+            <div class="product_grid">
+                <div class="product_item">
+                    <div class="detail">
+                        <a href="@Url.Action("Details", "Index", new { id = pro.MaSP})" class="auto-style2">
+                            <img src="~/Images/SanPham/@Html.DisplayFor(i => pro.UrlHinh)" style="height:160px;width:160px;"><br>
+
+                            <div class="ProductName">
+                                <span style="text-align: center; color: #000000;">@pro.TenSP</span>
+                            </div>
+
+                            <div class="Price-List">
+                                <span style="text-align: center; color: #FF3300; ">@pro.Gia</span>
+                            </div>
+                            <div style="padding-top: 10px">
+                                <a href="@Url.Action("giohangthem", "GioHang", new { masanpham = pro.MaSP })">Thêm vào giỏ</a>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+<div class="clear"></div>
+@{Html.RenderAction("sanPhamCaoCap", "Index");}
+
+<script>
+    $(function () {
+        $(".add-to-cart").click(function () {
+            pid = $(this).attr("data-id");
+            $.ajax({
+                url: "/Cart/Add",
+                data: JSON,
+                dataType: "json",
+                success: function (response) {
+                    $("#nn-cart-count").html(response.Count);
+                    $("#nn-cart-total").html(response.Total);
+                }
+            });
+        });
+    });
+</script>
+
+    

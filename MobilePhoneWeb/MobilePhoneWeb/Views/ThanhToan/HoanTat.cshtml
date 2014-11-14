@@ -1,0 +1,19 @@
+﻿@model int
+@{
+    ViewBag.Title = "HoanTat";
+    Layout = "~/Views/Shared/_LayoutPageIndex.cshtml";
+}
+
+<div class="title1" style="height:21px">&nbsp;THANH TOÁN</div>
+    <div class="show group" style="padding-top: 20px;">
+<section id="dangky">
+    <p>Hoàn tất mua hàng</p>
+    <div class="dangky-inner">
+
+
+        <p>Cám ơn bạn đã mua hàng của chúng tôi.</p>
+        <p>Chúng tôi sẽ giao hàng cho bạn trong thời gian ngắn nhất</p>
+        @Html.ActionLink("Trở về trang chủ", "Index", "Index")
+    </div>
+</section>
+        </div>

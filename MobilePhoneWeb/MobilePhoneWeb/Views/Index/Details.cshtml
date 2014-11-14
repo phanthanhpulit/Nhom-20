@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MobilePhoneWeb.ServiceSanPham.SanPham>
+@{
+    ViewBag.Title = "Chi tiết sản phẩm";
+    Layout = "~/Views/Shared/_LayoutPageIndex.cshtml";
+}
+<div class="title1" style="height:21px">
+    Chi tiết sản phẩm
+</div>
+<div class="show" style="padding-top: 20px; font-family:'Segoe UI Light'">
+    <div style="width:690px;">
+        
+            @foreach (var pro in Model)
+            {
+                <div style="float: left; width: 300px;">
+                    <img style="max-width:300px; max-height:300px;" src="~/Images/SanPham/@Html.DisplayFor(i => pro.UrlHinh)" />
+                </div>
+                <div style="">
+                    <span style="font-weight: 700; font-size: xx-large;">@pro.TenSP</span>
+                    <br />
+                    <br />
+                    <span style="color: #FF3300; font-size: x-large; font-weight: 700;">@pro.Gia VND</span>
+                    <br />
+                    <br />
+                    <span class="auto-style2">Số lượng: </span>
+                    <span  style="font-size: large; color: red">@pro.SoLuong</span>
+                    <br />
+                    <br />
+                    <span style="font-size: large">@pro.MoTa</span>
+                    <br />
+                    <br />
+                        <div class="buttom">
+                            <a href="@Url.Action("giohangthem", "GioHang", new { masanpham = pro.MaSP })"><img src="~/Images/mua-ngay.png" /></a>
+                        </div>
+                    <br />
+                </div>
+            }
+        
+    </div>
+</div>
+@{Html.RenderAction("SanPhamCungLoai", "Index");}

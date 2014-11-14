@@ -1,0 +1,200 @@
+﻿@model MobilePhoneWeb.Models.KhachHangModel
+@{
+    ViewBag.Title = "Đăng ký thành viên";
+    Layout = "~/Views/Shared/_LayoutPageIndex.cshtml";
+}
+<style type="text/css">
+
+    .auto-style11 {
+        width: 215px;
+        text-align: right;
+        font-weight: bold;
+    }
+    .auto-style5 {
+        color: #FF0000;
+    }
+    .auto-style12 {
+        font-weight: bold;
+        font-size: large;
+    }
+    .auto-style1 {
+        width: 215px;
+        text-align: right;
+        font-weight: 700;
+    }
+    .auto-style2 {
+        width: 215px;
+        }
+    .auto-style3 {
+        text-align: right;
+        width: 455px;
+    }
+    .auto-style6 {
+        text-align: left;
+    }
+    .auto-style14 {
+        width: 215px;
+        text-align: right;
+        font-weight: 700;
+        font-size: large;
+    }
+    .auto-style15 {
+        font-size: medium;
+    }
+    .auto-style16 {
+        width: 215px;
+        text-align: right;
+        vertical-align:middle;
+        font-weight: 700;
+        font-size: medium;
+    }
+    .auto-style17 {
+        font-weight: bold;
+        font-size: medium;
+    }
+    .auto-style18 {
+        width: 215px;
+        text-align: right;
+        font-weight: bold;
+        font-size: medium;
+    }
+    .auto-style19 {
+        width: 455px;
+    }
+    </style>
+<div class="title1" style="height:21px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ĐĂNG KÝ</div>
+@using (Html.BeginForm("FormRegister", "User", FormMethod.Post, new { id = "mainForm", name = "mainForm", onSubmit = "return Check();" }))
+{
+    @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+<div class="show" style="padding-top: 20px;text-align:left;">
+    
+    <form id="FormDangKy" action="" method="" onsubmit="return Check();">
+    <table style="width: 680px">
+        <tr>
+            <td class="auto-style18"><strong><span class="auto-style15">Tên đăng nhập
+                </span>
+                <img height="22px" width="22px" src="~/Images/icon_user.gif" class="auto-style15" />
+                </strong>
+            </td>
+            <td class="auto-style19">
+                
+                    @*<input class="required" minlength="6" id="name" name="name" size="35" onchange="Checkname();"/>*@
+                @Html.TextBoxFor(m => m.UserName)
+                @Html.ValidationMessageFor(model => model.UserName)
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style18"><strong><span class="auto-style15">Mật khẩu
+                </span>
+                <img height="22px" width="22px" src="~/Images/icon_mk.gif" class="auto-style15" />
+                </strong>
+            </td>
+            <td class="auto-style19">
+                @*<input class="required" minlength="6" type="password" id="pass" name="pass" />*@
+                @Html.TextBoxFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password)
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style16">
+                Email:&nbsp;&nbsp; </td>
+            <td style="text-align: left" class="auto-style19">
+               
+                    @*<input class="required email" id="email" name="email" size="35" onchange="checkEmail();" />*@
+                @Html.TextBoxFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style16">
+                Họ tên:&nbsp;&nbsp; </td>
+            <td style="text-align: left" class="auto-style19">
+                
+                    @*<input value="" id="name2" name="name2" size="35" onchange="Checkhoten();"/>*@
+                @Html.TextBoxFor(model => model.HoTen)
+                @Html.ValidationMessageFor(model => model.HoTen)
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style16">
+                Địa chỉ:&nbsp;&nbsp; </td>
+            <td style="text-align: left" class="auto-style19">
+                
+                    @*<input value="" id="diachi" name="diachi" size="35" onchange="Checkhoten();"/>*@
+                @Html.TextBoxFor(model => model.DiaChi)
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style16">
+                Điện thoại:&nbsp;&nbsp;</td>
+            <td style="text-align: left" class="auto-style19">
+                
+                    @*<input  class="digits" maxlength="12" id="phone" name="phone" size="35" onchange="Checkdt();" />*@
+                @Html.TextBoxFor(model => model.DienThoai)
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style16">
+                Giới tính:<br />
+                &nbsp;</td>
+            <td style="text-align: left" class="auto-style19">
+                
+                @*<input id="gioitinh" type="radio" value="Nam" name="gioitinh" />
+                <label for="sex">Nam</label>
+                <input id="gioitinh"  type="radio" value="Nữ" name="gioitinh" checked="checked" />
+                <label for="sex">Nữ</label>*@
+                @Html.RadioButtonFor(model => model.GioiTinh, "Nam", true) Nam  
+                @Html.RadioButtonFor(model =>model.GioiTinh, "Nữ", false) Nữ
+               
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style16">
+                Ngày sinh:&nbsp;&nbsp; </td>
+            <td style="text-align: left" class="auto-style19">
+                
+                    @*<select name="ngay" id="ngay" onChange="check_date_month()">
+            	    <option selected="selected" value="-1">[Ngày]</option>
+				    <script>
+				        for (i = 1; i <= 31; ++i)
+				            document.write('<option value="' + i + '">' + i + '</option>');
+            	    </script>
+        		    </select>
+                            <select name="thang" id="thang" onChange="check_date_month()">
+                            <option selected="selected" value="-1">[Tháng]</option>
+            	            <script>
+            	                for (i = 1; i <= 12; ++i)
+            	                    document.write('<option value="' + i + '">' + i + '</option>');
+            	            </script>
+                            </select> 
+                            <select name="nam" id="nam" onChange="check_date_month()">
+                            <option style="width:49px;" selected="selected" value="-1" >[Năm]</option>
+                            <script>
+                                for (var i = 1900; i <= 2010; i++) {
+                                    var s = "<option value='" + i + "'>" + i + "</option>";
+                                    document.write(s);
+                                }
+                            </script>  
+                            </select> *@
+                @Html.TextBoxFor(model => model.NgaySinh) ()
+                @Html.ValidationMessageFor(model => model.NgaySinh)
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style1">
+                &nbsp;</td>
+            <td style="text-align: left" class="auto-style19">
+                <input type="hidden" name="dangKy" class="dangKy" />
+                <input type="image" src="~/Images/btn_DangKy.jpg" class="dangKy">
+            </td>
+        </tr>
+        </table></form>
+    @if (@ViewBag.Mess == 1)
+    {<script>alert("Đăng kí thành công!"); window.location.href = 'http://' + window.location.host;</script>}
+    @if (@ViewBag.Mess == 0)
+    {
+        <script>alert("Tên đăng nhập đã bị trùng!");</script>
+    }
+</div>
+}

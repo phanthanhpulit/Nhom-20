@@ -1,0 +1,162 @@
+﻿@model MobilePhoneWeb.Models.DSGioHang
+@{
+    ViewBag.Title = "Giỏ hàng";
+    Layout = "~/Views/Shared/_LayoutPageIndex.cshtml";
+}
+<script type="text/javascript">
+    $(function () {
+        $('.RemoveLink').click(function () {
+            var x = $(this).attr("data-id");
+            if (confirm("Đối tượng sẽ bị xóa.Bạn có muốn không ?")) {
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("giohangxoa", "GioHang")',
+                    data: { id: x }
+                });
+                $("#row-" + x).remove();
+            }
+        })
+
+        $('.updatesoluong').click(function () {
+            var x = soluong.value;
+            if (x < 0) {
+                alert('Bạn phải nhập giá trị lớn hơn 0');
+                soluong.focus();
+                return false;
+            }
+            return true;
+        })
+
+    })
+</script>
+<style type="text/css">
+    .auto-style2 {
+        font-size: medium;
+        text-align: left;
+    }
+    .auto-style4 {
+        text-align: center;
+    }
+    .auto-style5 {
+        text-align: center;
+    }
+    .gio_hang tr, .gio_hang td, .gio_hang th {
+        border: 1px solid;
+        vertical-align: middle;
+    }
+
+    </style>
+<div class="title1" style="height:21px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GIỎ HÀNG</div>
+<div class="show" style="padding-top: 20px; text-align: center;">
+    <div class="auto-style4">
+        <section id="giohang">
+            <strong><span class="auto-style2">GIỎ HÀNG CỦA BẠN</span></strong>
+            <div class="giohang_inner">
+                    @if (Model.Cart.Lines.Count() > 0)
+                    {
+                        <table class="gio_hang" border="1">
+                    <colgroup span="4"
+                              style="background-color:#EEE8AA;"></colgroup>
+                    <colgroup span="1"
+                              style="background-color:#F96;"></colgroup>
+                    <colgroup span="1"
+                              style="background-color:#EEE8AA;"></colgroup>
+                    <thead>
+                        <tr>
+
+                            <th>
+                                Ảnh
+                            </th>
+                            <th>
+                                Tên sản phẩm
+                            </th>
+                            <th>
+                                Số lượng
+                            </th>
+                            <th>
+                                Giá sản phẩm
+                            </th>
+                            <th>
+                                Tổng
+                            </th>
+                            <th>
+                                Xóa
+                            </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model.Cart.Lines)
+                        {
+                            <tr>
+
+                                <td>
+                                    <a href="Index/Details/@item.masp">
+                                        <img src="../Images/SanPham/@item.hinhanh" width="100px" />
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="Index/Details/@item.masp">
+                                        @item.tensp
+                                    </a>
+                                </td>
+                                <td style="width: 100px;">
+
+                                    @using (Html.BeginForm("capnhatsoluong", "GioHang", new { masanpham = item.masp }))
+                                    {
+                                        <input name="soluong" id="soluong" type="text" value="@item.soluong" size="1" />
+
+                                        <input type="submit" alt="Cập nhật" class="updatesoluong" value="Cập nhật" onclick="" />
+
+                                    }
+                                </td>
+                                <td style="width: 140px;">
+                                    @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(item.gia))
+                                </td>
+                                <td style="color:#FFF; font-weight:bold; width:140px">
+                                    @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(item.gia * item.soluong))
+                                </td>
+                                <td>
+                                    <a onclick="return xacnhanxoa('@item.masp')" class="RemoveLink" href="/GioHang/giohangxoa?masanpham=@item.masp">Xoá</a>
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <th colspan="5" align="right">
+                                Tổng tiền:
+                            </th>
+                            <th style="color:#F00; font-size:20px">
+                                @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(Model.Cart.tongtien()))
+                            </th>
+                        </tr>
+
+                    </tfoot>
+                </table>
+                    <div style="padding-bottom: 10px;">
+                        @if (Session["Account"] != null)
+                        {
+                            <a href="../ThanhToan/DatHang?cusid=@Session["Account"].ToString()"><input style="width:200px;" name="btnMuaHang" class="btn-muahang" type="button" value="Đặt hàng" /></a>
+                        }
+                        else
+                        {
+                            <a href="#overlay"><input style="width:200px;" name="btnMuaHang" class="btn-muahang" type="button" value="Đặt hàng"/></a>
+                        }
+                        
+                </div>
+                    }else
+                    {
+                        <strong><span>GIỎ HÀNG CỦA BẠN ĐANG TRỐNG</span></strong>
+                    }
+                    <a href="../index"><input style="width:200px;" name="btnTiepTucMuaHang" class="btn-muahang" type="button" value="Tiếp tục mua hàng" /></a>
+
+                
+
+            </div>
+
+        </section>
+    </div>
+</div>
